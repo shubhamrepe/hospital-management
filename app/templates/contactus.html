@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>HMS - Django</title>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+  <title>shubham</title>
+</head>
+
+<body>
+  {% include "navbar.html" %}
+  <br><br>
+  <center>
+    <h3 class='alert alert-success' style="margin-bottom:0px;">Contact Us !</h3>
+  </center>
+  <body>
+    <h1 align="center">contact info</h1>
+   <form method="POST" action="#">
+    {% csrf_token %}
+    <table border="2px" align="center">
+       <tr>
+          <th>name :</th>
+          <td><input type="text" placeholder="Enter your name" id="name" name="name"></td>
+       </tr>
+       <tr>
+         <th>surname :</th>
+         <td><input type="text" placeholder="Enter your surname" id="surname" name="surname"></td>
+      </tr>
+      <tr>
+         <th>phone :</th>
+         <td><input type="number" placeholder="enter your phone" id="phone" name="phone"></td>
+      </tr>
+      <tr>
+         <th>email :</th>
+         <td><input type="email" placeholder="email" id="email" name="email"></td>
+      </tr>
+      <tr>
+         <th>message :</th>
+         <td><textarea rows="4" placeholder="Enter Your message" id="msg" name="msg"></textarea></td>
+      </tr>
+      <tr>
+         <td colspan="2px" align="center">
+          <input type="submit" value="submit">
+        </td>
+      </tr>
+    </table>
+   </form><br><br>
+  </body>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <h1 class="display-4">Hello</h1>
+    <p class="lead">A service dedicated to Hospital Admin, Doctor and Patient.</p>
+    <hr class="my-4">
+    <p>Explore our Website.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+    </p>
+  </div>
+  {% include "footer.html" %}
+</body>
+
+
+</html>
