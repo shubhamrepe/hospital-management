@@ -18,7 +18,7 @@ The Hospital Management Project is a Django web application that streamlines hos
 
 1. Clone the repository:
     ```shell
-    git clone 
+    git clone https://github.com/shubhamrepe/hospital-management.git
     ```
 
 2. Create and activate a virtual environment:
